@@ -1,0 +1,26 @@
+a.link {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  color: black;
+}
+
+a.active {
+  color: blue;
+}
+
+.full-width {
+  width: 100%;
+  text-align: center;
+}
+
+span.navbar-brand {
+  color: yellow !important;
+  text-indent: 40px;
+  text-align: center;
+}
+
+#mainNav{
+  background-color:white;
+  width: 15rem;
+}
