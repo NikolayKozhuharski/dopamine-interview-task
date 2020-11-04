@@ -3,7 +3,6 @@ import { NavLink, withRouter } from "react-router-dom";
 import "./Navigation.css";
 
 const Navigation = (props) => {
-  const history = props.history;
 
 
   return (
@@ -21,11 +20,11 @@ const Navigation = (props) => {
             <br/>
 
               <NavLink to="/battle" className="list-group-item">
-                Bottle
+                Battle
               </NavLink>
             </div>
         </nav>
   );
 };
 
-export default withRouter(Navigation);
+export default Navigation;
