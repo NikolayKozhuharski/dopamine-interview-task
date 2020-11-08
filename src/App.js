@@ -6,6 +6,7 @@ import { getAllPokemons } from "./common/pokemonsConstruction";
 import { pokemonsContext } from "./common/pokemonsContext";
 import { AllPokemons } from "./components/AllPokemons/AllPokemons";
 import Battle from "./components/Battle/Battle";
+import Konva from "./components/konva";
 import Navigation from "./components/Navigation/Navigation";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Switch>
           <Route path='/pokemons' exact component={AllPokemons} />
           <Route path='/battle/:selectedPokemon' exact component={Battle} />
+          <Route path='/konva' exact component={Konva} />
         </Switch>
         </pokemonsContext.Provider>
       </BrowserRouter>
