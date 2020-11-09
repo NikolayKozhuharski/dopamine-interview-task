@@ -36,7 +36,7 @@ function PokemonCard(props) {
           <CardActionArea>
             <CardMedia
               className={classes.media}
-              image={props.pokemon.picture}
+              image={props.pokemon.pictureFront}
               title={props.pokemon.name}
             />
             <CardContent>

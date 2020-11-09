@@ -6,7 +6,9 @@ const getPokemon = (name, url) => {
   const moves = [];
   const stats = {};
   let pokemon = {};
-  let picture;
+  let pictureBack;
+  let pictureFront;
+
   return fetch(url)
     .then((response) => response.json())
     .then((pokemonData) => {
@@ -21,13 +23,15 @@ const getPokemon = (name, url) => {
       for (const stat of pokemonData.stats) {
         stats[stat.stat.name] = stat.base_stat;
       }
-      picture = pokemonData.sprites.back_default;
+      pictureBack = pokemonData.sprites.back_default;
+      pictureFront = pokemonData.sprites.front_default;
       pokemon = {
         name,
         ability,
         moves,
         stats,
-        picture,
+        pictureBack,
+        pictureFront,
       };
 
       return pokemon;
